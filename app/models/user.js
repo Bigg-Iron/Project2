@@ -17,7 +17,10 @@ module.exports = function(sequelize, DataTypes) {
     type:DataTypes.STRING,
     unique:true,
     allowNull:false,
-   }
+   },
+   createdAt: { type: DataTypes.DATE, defaultValue: DataTypes.NOW },
+   updatedAt: { type: DataTypes.DATE, defaultValue: DataTypes.NOW }
+
   });
 
   User.associate = function(models) {
@@ -26,5 +29,7 @@ module.exports = function(sequelize, DataTypes) {
     });
   };
 
+  User.sync();
+  
   return User;
 };

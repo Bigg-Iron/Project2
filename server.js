@@ -1,3 +1,4 @@
+require('dotenv').config({path:"./.env.default"});
     var express    = require('express');
     var app        = express();
     var passport   = require('passport');
@@ -6,7 +7,6 @@
     var exphbs     = require('express-handlebars');
     var MySQLStore = require('express-mysql-session')(session);
     var env = require('dotenv').load()
-    require('dotenv').config();
 
     //For BodyParser
     app.use(bodyParser.urlencoded({ extended: true }));

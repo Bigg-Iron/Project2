@@ -36,5 +36,8 @@ module.exports = function(sequelize, Sequelize) {
     });
   };
 
+  Bucketlist.sync();
+  
   return Bucketlist;
+
 };
