@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bucket List</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/dropzone.css" type="text/css" rel="stylesheet"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper">
+          <a href="/profile" class="brand-logo"><i class="large material-icons">airplanemode_on</i>Bucket List</a>
+
+
+
+          {{#if isAuthenticated}}
+          <ul class="right hide-on-med-and-down">
+              <li><a href="/logout">Logout</a></li>
+
+
+          {{else}}
+          <ul class="right hide-on-med-and-down">
+              <li><a href="/register">Register</a></li>
+          </ul>
+
+          <ul class="right hide-on-med-and-down">
+              <li><a href="/login">Login</a></li>
+          </ul>
+          {{/if}}
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+        </div>
+      </nav>
+
+
+
+{{!-- <!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{ title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+
+
+        <!-- Place favicon.ico in the root directory -->
+    </head>
+    <body>
+        <div class="container">
+          <div class="header clearfix">
+            <nav>
+              <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                {{#if isAuthenticated}}
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout">Logout</a>
+                </li>             
+                {{else}}
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">Login</a>
+                </li>                
+                {{/if}}
+              </ul>
+            </nav>
+            <h3 class="text-muted">Project name</h3>
+          </div>
+        </div>  --}}
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->

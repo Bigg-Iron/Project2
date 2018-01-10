@@ -1,0 +1,101 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 500px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+#dropzone {
+  margin-bottom: 3rem; }
+
+.dropzone {
+  border: 2px dashed #048e81;
+  border-radius: 5px;
+  background: white;
+  }
+  
+  .dropzone .dz-message {
+    font-weight: 400;
+      color:black; }
+    .dropzone .dz-message .note {
+      font-size: 0.8em;
+      font-weight: 200;
+      display: block;
+      margin-top: 1.4rem; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+#try-it-out {
+  color:#444444;
+  text-align:center;
+}
+
+.card.large {
+  height: 700px;
+
+}
+
+.form {
+  width:30%;
+
+  padding:10px;
+  border-radius:25px;
+}
+ 
+ .opaque{
+
+    background: rgba(0,0,0,0.7);
+
+ }
