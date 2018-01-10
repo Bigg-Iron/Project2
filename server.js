@@ -102,6 +102,3 @@ require('dotenv').config({path:"./.env.default"});
     }).catch(function(err){
     console.log(err,"Something went wrong with the Database Update!")
     });
-
-
-
